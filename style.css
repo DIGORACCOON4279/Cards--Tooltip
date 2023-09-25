@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(230, 230, 230);
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto;
+    row-gap: 50px;
+}
+
+
+.container .containerCard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+    gap: 20px;
+    position: relative;
+}
+
+.container .containerCard .card {
+    width: 20%;
+    border-radius: 15px;
+    background-color: rgb(230, 230, 230);
+    border-top: 3px solid rgb(158, 158, 158);
+    position: relative;
+    transform: scale(100%);
+    transition: all 0.3s ease-in-out;
+    z-index:1;
+    cursor: pointer;
+}
+
+.container .containerCard .card:hover {
+    box-shadow: 0 0 25px 2px rgb(155, 155, 155);
+    transform: scale(101%);
+    border-top: 3px solid rgb(234, 166, 248);
+}
+
+.container .containerCard .card:last-child {
+    width: 20%;
+    transition: .3s ease-in-out;
+}
+
+.container .containerCard .card:last-child:hover {
+    background-color: rgb(194, 129, 255);
+    color: rgb(238, 238, 238);
+    font-weight: 400;
+}
+
+.container .containerCard .cardFirst:hover {
+    background-color: rgb(195, 255, 195);
+}
+
+.container .containerCard .cardSecond:hover {
+    background-color: rgb(255, 212, 195);
+}
+
+.container .containerCard .cardThird:hover {
+    background-color: rgb(191, 240, 255);
+}
+
+.container .containerCard .cardSolution:hover {
+    background-color: rgb(255, 227, 195);
+}
+
+.container .containerCard .card .img {
+    width: 100%;
+    padding: 0px;
+}
+.container .containerCard .card .title {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 10px;
+}
+
+.container .containerCard .card .paragraph {
+    font-size: 12px;
+    font-weight: 300;
+    margin: 10px;
+}
+.container .containerCard .cardFirst .tool .info{
+    position: absolute;
+    top:0px;
+    right:0px;
+    cursor: help;
+}
+.container .containerCard .cardFirst .toolTip {
+    display: none;
+}
+.container .containerCard .cardFirst .text{
+    display: none;
+}
+.container .containerCard .cardFirst .toolTip:checked + .text{
+    display: flex;
+    font-size: 12px;
+    background-color: #ececec;
+    color: #999999;
+    border-radius: 5px;
+    box-shadow: 0 0 25px 2px rgb(155, 155, 155);
+    padding: 10px;
+    position: absolute;
+    top:-45px;
+    right:-30px;
+    left:80px;
+    z-index:10;
+}
+.container .containerCard .cardSecond .tool .info{
+    position: absolute;
+    top:0px;
+    right:0px;
+    cursor: help;
+}
+.container .containerCard .cardSecond .toolTip {
+    display: none;
+}
+.container .containerCard .cardSecond .text{
+    display: none;
+}
+.container .containerCard .cardSecond .toolTip:checked + .text{
+    display: flex;
+    font-size: 12px;
+    background-color: #ececec;
+    color: #999999;
+    border-radius: 5px;
+    box-shadow: 0 0 25px 2px rgb(155, 155, 155);
+    padding: 10px;
+    position: absolute;
+    top:-45px;
+    right:-30px;
+    left:80px;
+    cursor:help;
+    z-index:10;
+}
+.container .containerCard .cardThird .tool .info{
+    position: absolute;
+    top:0px;
+    right:0px;
+    cursor: help;
+}
+.container .containerCard .cardThird .toolTip {
+    display: none;
+}
+.container .containerCard .cardThird .text{
+    display: none;
+}
+.container .containerCard .cardThird .toolTip:checked + .text{
+    display: flex;
+    font-size: 12px;
+    background-color: #ececec;
+    color: #999999;
+    border-radius: 5px;
+    box-shadow: 0 0 25px 2px rgb(155, 155, 155);
+    padding: 10px;
+    position: absolute;
+    top:-45px;
+    right:-30px;
+    left:80px;
+    cursor:help;
+    z-index:10;
+}
+.container .containerCard .cardSolution .tool .info{
+    position: absolute;
+    top:0px;
+    right:0px;
+    cursor: help;
+}
+.container .containerCard .cardSolution .toolTip {
+    display: none;
+}
+.container .containerCard .cardSolution .text{
+    display: none;
+}
+.container .containerCard .cardSolution .toolTip:checked + .text{
+    display: flex;
+    font-size: 12px;
+    background-color: #ececec;
+    color: #999999;
+    border-radius: 5px;
+    box-shadow: 0 0 25px 2px rgb(155, 155, 155);
+    padding: 10px;
+    position: absolute;
+    top:-45px;
+    right:-30px;
+    left:80px;
+    z-index:10;
+}
